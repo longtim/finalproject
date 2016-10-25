@@ -15,7 +15,7 @@ library("knitr", lib.loc="~/R/win-library/3.3")
 library("arm", lib.loc="~/R/win-library/3.3")
 library("caret", lib.loc="~/R/win-library/3.3")
 
-areaModel <- standardize(lm(SalePrice~LotArea, data=train))
+areaModel333 <- standardize(lm(SalePrice~LotArea, data=train))
 display(areaModel)
 plot(train$LotArea, train$SalePrice, main=paste ("Plot of", names(train$LotArea)))
 plot(areaModel)
